@@ -1,7 +1,9 @@
 Stworzenie buforu pozwala nam stworzyć kolejkowanie maili dzięki czemu możemy wraz z dframe/database ustawić by był limit wysyłanych maili na godzinę. W tym celu gdy posiadamy już pobranego i zainstalowanego frameworka, tworzymy model o nazwie mail.php
 
 **Model/Mail.php**
+
 .. code-block:: php
+
  namespace Model;
  use Dframe\Config;
  use Dframe\MyMail\MyMail;
@@ -168,7 +170,9 @@ Stworzenie buforu pozwala nam stworzyć kolejkowanie maili dzięki czemu możemy
  }
 
 Cron jest odpalany z poziomu konsoli, służy do cyklicznego sprawdzania czy jest coś do wysłania. Jeśli natrafi na wpis w bazie z mailem to postara się go nam wysłać.
+
 .. code-block:: php
+
  bin/SmallCron.php
  set_time_limit(0);
  ini_set('max_execution_time', 0);
@@ -211,6 +215,7 @@ Cron jest odpalany z poziomu konsoli, służy do cyklicznego sprawdzania czy jes
 Ostatnim naszym elementem jest kod dodający do bazy. Metoda |addToBuffer| służy do zbierania listy mailingowej a następnie po skończeniu wykonujemy |execute| która dodaje do bazy listę i ją kolejkuje.
 
 .. code-block:: php
+
  $mailModel = $this->loadModel('Mail');
  $mailModel->addToBuffer(array('name' => 'NameRespondent', 'mail' => 'respondent@Email_respondent'), 'Subjectname', $body);
  $execute = $mailModel->execute();
