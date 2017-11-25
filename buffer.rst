@@ -186,6 +186,8 @@ Stworzenie buforu pozwala nam stworzyć kolejkowanie maili dzięki czemu możemy
 
 Cron jest odpalany z poziomu konsoli, służy do cyklicznego sprawdzania czy jest coś do wysłania. Jeśli natrafi na wpis w bazie z mailem to postara się go nam wysłać.
 
+**bin/SmallCron.php **
+
 .. code-block:: php
 
 
