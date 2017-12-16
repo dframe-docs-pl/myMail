@@ -1,6 +1,8 @@
 Bibliotekę można stosować niezależnie tzn nie jest konieczne posiadanie framerowka. Dostęp do klasy phpMailer mamy za pośrednictwem zmiennej |mail| Poniższy przykład wysłania maila odrazu do adresata.
+
 .. code-block:: php
- use Dframe\MyMail\MyMail
+
+ use Dframe\MyMail\MyMail;
  
  require_once __DIR__ . '/../vendor/autoload.php';
  $config = require_once 'config/config.php'; 
