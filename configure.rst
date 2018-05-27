@@ -1,4 +1,10 @@
-Biblioteka myMail to prosty wraper tym razem dla phpmailer. W prosty sposób ustawiasz dane do połaczenia w configu.
+.. title:: MyMail -  Wrapper dla wysyłki maili
+
+.. meta::
+    :description: MyMail -  Wrapper dla wysyłki maili - dframeframework.com
+    :keywords: php, mailing, php, php7, send mail, mails, maile, smtp, imap, mail wrapper, dframe
+    
+Biblioteka myMail to prosty wrapper tym razem dla phpmailer. W prosty sposób ustawiasz dane do połaczenia w configu.
 
 .. code-block:: php
 
