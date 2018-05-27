@@ -1,3 +1,9 @@
+.. title:: MyMail - Wysyłka maili
+
+.. meta::
+    :description: MyMail - Wysyłka maili
+    :keywords: php, mailing, php, php7, send mail, buffer, queuing, smtp, imap, mail wrapper, dframe
+
 Bibliotekę można stosować niezależnie tzn nie jest konieczne posiadanie framerowka. Dostęp do klasy phpMailer mamy za pośrednictwem zmiennej |mail| Poniższy przykład wysłania maila odrazu do adresata.
 
 .. code-block:: php
