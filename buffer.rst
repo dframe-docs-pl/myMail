@@ -1,3 +1,9 @@
+.. title:: MyMail - Kolejkowanie maili
+
+.. meta::
+    :description: MyMail - Kolejkowanie maili - dframeframework.com
+    :keywords: php, mailing, php, e-mail, php7, send mail, buffer, kolejkowanie, smtp, imap, mail wrapper, dframe
+
 Stworzenie buforu pozwala nam stworzyć kolejkowanie maili dzięki czemu możemy wraz z dframe/database ustawić by był limit wysyłanych maili na godzinę. W tym celu gdy posiadamy już pobranego i zainstalowanego frameworka, tworzymy model o nazwie mail.php
 
 **Model/Mail.php**
