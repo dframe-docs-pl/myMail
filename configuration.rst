@@ -6,6 +6,20 @@
     
 Biblioteka myMail to prosty wrapper tym razem dla phpmailer. W prosty sposób ustawiasz dane do połaczenia w configu.
 
+Instalacja
+----------
+
+Z poziomu konsoli bash wykonaj polecenie composera*
+
+.. code-block:: bash
+
+ $ composer require dframe/mymail
+
+Albo pobierz ręcznie https://github.com/dframe/myMail/releases
+
+Konfiguracja
+----------
+
 .. code-block:: php
 
  return array(
