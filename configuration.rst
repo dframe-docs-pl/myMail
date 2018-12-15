@@ -30,11 +30,6 @@ Konfiguracja
     'SMTPSecure' => 'tls',    // Enable TLS encryption, `ssl` also accepted
     'Port' => 587,    // Port
 
-    'setMailTemplateDir' => './View/templates/mail',
-    'smartyHtmlExtension' => '.html.php',    // Default '.html.php'
-    'smartyTxtExtension' => '.txt.php',    //Default '.txt.php'
-    'fileExtension' => '.html.php',    
-
-    'senderName' => PROJECT_NAME,    //Name of default sender
-    'senderMail' => 'senderMail@mail'    //Default sender's address
+    'SenderName' => PROJECT_NAME,    //Name of default sender
+    'SenderEmail' => 'senderMail@mail'    //Default sender's address
  );
