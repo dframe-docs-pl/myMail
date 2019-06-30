@@ -13,9 +13,9 @@ Bibliotekę można stosować niezależnie tzn nie jest konieczne posiadanie fram
  require_once __DIR__ . '/../vendor/autoload.php';
  $config = require_once 'config/config.php';
  
- $mail = new MyMail(); // Załadowanie Configu
- $mail->mailObject->isSMTP();
- $mail->mailObject->SMTPOptions = [
+ $MyMail = new MyMail(); // Załadowanie Configu
+ $MyMail->mail->isSMTP();
+ $MyMail->mail->SMTPOptions = [
      'ssl' => [
          'verify_peer' => false,
          'verify_peer_name' => false,
@@ -29,16 +29,16 @@ Bibliotekę można stosować niezależnie tzn nie jest konieczne posiadanie fram
    * 2 = messages only
    */         
  //$mail->SMTPDebug  = 2;
- $mail->mailObject->SMTPSecure = false;
+ $MyMail->mail->SMTPSecure = false;
  
  $addAddress = ['mail' => 'adres@email', 'name' => 'titleFrom']; // Adresy na jakie ma wysłać
  
  try {
-     $mail->send($addAddress, 'Test Mail', $body);
+     $MyMail->send($addAddress, 'Test Mail', $body);
  
  } catch (Exception $e) {
      echo $e->getMessage();
  
  }
 
-.. |mail| cCode:: $mail->mailObject 
+.. |mail| cCode:: $MyMail->mail 
